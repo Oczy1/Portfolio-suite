@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('../fonts/icons.ttf?4lu96g') format('truetype'),
+    url('../fonts/icons.woff?4lu96g') format('woff'),
+    url('../fonts/icons.svg?4lu96g#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+  content: "\e91f";
+}
+.icon-AE .path1:before {
+  content: "\e904";
+  color: rgb(0, 0, 0);
+}
+.icon-AE .path2:before {
+  content: "\e905";
+  margin-left: -1.01171875em;
+  color: rgb(216, 161, 255);
+}
+.icon-ai .path1:before {
+  content: "\e906";
+  color: rgb(0, 0, 0);
+}
+.icon-ai .path2:before {
+  content: "\e907";
+  margin-left: -1.01171875em;
+  color: rgb(255, 127, 24);
+}
+.icon-Figma .path1:before {
+  content: "\e908";
+  color: rgb(10, 207, 131);
+}
+.icon-Figma .path2:before {
+  content: "\e909";
+  margin-left: -0.6630859375em;
+  color: rgb(162, 89, 255);
+}
+.icon-Figma .path3:before {
+  content: "\e90a";
+  margin-left: -0.6630859375em;
+  color: rgb(242, 78, 30);
+}
+.icon-Figma .path4:before {
+  content: "\e90b";
+  margin-left: -0.6630859375em;
+  color: rgb(255, 114, 98);
+}
+.icon-Figma .path5:before {
+  content: "\e90c";
+  margin-left: -0.6630859375em;
+  color: rgb(26, 188, 254);
+}
+.icon-Group .path1:before {
+  content: "\e90d";
+  color: rgb(0, 0, 0);
+}
+.icon-Group .path2:before {
+  content: "\e90e";
+  margin-left: -1.01171875em;
+  color: rgb(49, 197, 240);
+}
+.icon-LR .path1:before {
+  content: "\e90f";
+  color: rgb(0, 0, 0);
+}
+.icon-LR .path2:before {
+  content: "\e910";
+  margin-left: -1.0341796875em;
+  color: rgb(170, 209, 235);
+}
+.icon-PR .path1:before {
+  content: "\e911";
+  color: rgb(0, 0, 0);
+}
+.icon-PR .path2:before {
+  content: "\e912";
+  margin-left: -1.0341796875em;
+  color: rgb(229, 121, 255);
+}
+.icon-Sketch .path1:before {
+  content: "\e913";
+  color: rgb(234, 108, 0);
+}
+.icon-Sketch .path2:before {
+  content: "\e914";
+  margin-left: -1.115234375em;
+  color: rgb(234, 108, 0);
+}
+.icon-Sketch .path3:before {
+  content: "\e915";
+  margin-left: -1.115234375em;
+  color: rgb(253, 173, 0);
+}
+.icon-Sketch .path4:before {
+  content: "\e916";
+  margin-left: -1.115234375em;
+  color: rgb(253, 210, 49);
+}
+.icon-Sketch .path5:before {
+  content: "\e917";
+  margin-left: -1.115234375em;
+  color: rgb(253, 210, 49);
+}
+.icon-Sketch .path6:before {
+  content: "\e918";
+  margin-left: -1.115234375em;
+  color: rgb(253, 173, 0);
+}
+.icon-Sketch .path7:before {
+  content: "\e919";
+  margin-left: -1.115234375em;
+  color: rgb(253, 173, 0);
+}
+.icon-Sketch .path8:before {
+  content: "\e91a";
+  margin-left: -1.115234375em;
+  color: rgb(254, 238, 183);
+}
+.icon-XD .path1:before {
+  content: "\e91b";
+  color: rgb(229, 229, 229);
+}
+.icon-XD .path2:before {
+  content: "\e91c";
+  margin-left: -1.0341796875em;
+  color: rgb(46, 0, 30);
+}
+.icon-XD .path3:before {
+  content: "\e91d";
+  margin-left: -1.0341796875em;
+  color: rgb(255, 43, 194);
+}
+.icon-XD .path4:before {
+  content: "\e91e";
+  margin-left: -1.0341796875em;
+  color: rgb(255, 43, 194);
+}
+.icon-behance:before {
+  content: "\e900";
+}
+.icon-in:before {
+  content: "\e901";
+}
+.icon-instagram:before {
+  content: "\e902";
+}
+.icon-planet:before {
+  content: "\e903";
+}

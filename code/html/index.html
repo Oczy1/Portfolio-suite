@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/iconsfont.css">
+    <link rel="stylesheet" href="../css/.css">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="shortcut icon" href="favicon.ico">
@@ -14,24 +14,49 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__content container">
-
-                <nav class="nav">
-
-                </nav>
+            <div class="header__content _container">
+                <div class="header__menu menu">
+                    <div class="menu__icon icon-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li><a data-goto="" href="#" class="menu__link">Home</a></li>
+                            <li><a data-goto="" href="#" class="menu__link">About me </a></li>
+                            <li><a data-goto="" href="#" class="menu__link">Skills</a></li>
+                            <li><a data-goto="" href="#" class="menu__link">Portfolio</a></li>
+                            <li><a data-goto="" href="#" class="menu__link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
-        <main class="main">
-            <div class="main__content container">
-
+        <main class="page">
+            <div class="hello">
+                <div class="hello__container _container">
+                    <div class="hello__content">
+                        <h1 class="hello__title">Denis Novik</h1>
+                        <div class="hello__text text">UX | UI designer 24 years old, Minsk</div>
+                        <div class="switch__langue switch">
+                            <a class='rus' type=button value='rus'>eng</a>
+                            <a class='eng' type=button value='eng'>rus |</a>
+                        </div>
+                    </div>
+                    <div class="hello__photo">
+                        <img src="../img/photo.png" alt="">
+                    </div>
+                </div>
             </div>
         </main>
         <footer class="footer">
-            <div class="footer__content container">
+            <div class="footer__content _container">
 
             </div>
         </footer>
     </div>
+    <script src="../script/script.js"></script>
     <script src="../script/jquery-3.6.0.min.js"></script>
     <script src="../script/tabs.js"></script>
 </body>

@@ -1,25 +1,171 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,300;1,600&display=swap");
-.container {
-  max-width: 1110px;
+body {
+  color: #000;
+}
+
+._container {
+  max-width: 953px;
   margin: 0 auto;
 }
-@media (max-width: 1122px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (max-width: 991.98px) {
-  .container {
+@media (max-width: 965px) {
+  ._container {
     max-width: 750px;
   }
 }
-@media (max-width: 767.98px) {
-  .container {
+@media (max-width: 991.98px) {
+  ._container {
     max-width: none;
     padding: 0 10px;
   }
 }
 
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.header__content {
+  max-width: 965px;
+  padding: 0 6px;
+}
+.menu__body {
+  padding: 0 0 10px 0;
+}
+@media (max-width: 767.98px) {
+  .menu__body {
+    transform: translate(0px, -100%);
+    transition: transform 0.8s ease 0s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    overflow: auto;
+    padding: 66px 0px 30px 15px;
+  }
+  .menu__body._active {
+    transform: translate(0px, 0%);
+  }
+}
+.menu__body:after {
+  content: "";
+  width: 100%;
+  justify-content: flex-end;
+  border: 1px solid transparent;
+  bottom: 0;
+  display: flex;
+  background: rgb(130, 130, 130);
+}
+@media (max-width: 767.98px) {
+  .menu__body:after {
+    display: none;
+  }
+}
+.menu__list {
+  height: 88px;
+  padding: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767.98px) {
+  .menu__list {
+    display: block;
+  }
+  .menu__list li {
+    margin: 0px 0px 25px 0px;
+  }
+  .menu__list li:last-child {
+    margin: 0px 0px 0px 0px;
+  }
+}
+.menu__link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #070707;
+  transition: color 0.4 ease 0;
+}
+@media (max-width: 767.98px) {
+  .menu__link {
+    font-size: 34px;
+  }
+}
+@media (min-width: 991.98px) {
+  .menu__link:hover {
+    color: #828282;
+  }
+}
+@media (max-width: 767.98px) {
+  .menu__link {
+    color: #828282;
+  }
+  .menu__link._active {
+    color: #000;
+    transition: all 0.4s ease 0s;
+  }
+}
+
+.icon-menu {
+  display: none;
+}
+@media (max-width: 767.98px) {
+  .icon-menu {
+    display: block;
+    position: absolute;
+    top: 68px;
+    right: 30px;
+    width: 33px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .icon-menu span {
+    transition: all 0.3s ease 0s;
+    top: calc(50% - 2px);
+    left: 8px;
+    position: absolute;
+    width: 100%;
+    height: 3.84px;
+    background-color: #000;
+  }
+  .icon-menu span:first-child {
+    top: 0px;
+  }
+  .icon-menu span:last-child {
+    top: auto;
+    bottom: 0px;
+  }
+  .icon-menu._active span {
+    transform: scale(0);
+    background-color: #828282;
+  }
+  .icon-menu._active span:first-child {
+    transform: rotate(-45deg);
+    top: calc(50% - 3px);
+  }
+  .icon-menu._active span:last-child {
+    transform: rotate(45deg);
+    bottom: calc(50% - 2px);
+  }
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-bold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-bold.woff2") format("woff2"), url("../fonts/gilroy-bold.woff") format("woff"), url("../fonts/gilroy-bold.ttf") format("truetype"), url("../fonts/gilroy-bold.svg#gilroy-bold") format("svg"); /* Chrome < 4, Legacy iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy-medium.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/gilroy-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy-medium.woff2") format("woff2"), url("../fonts/gilroy-medium.woff") format("woff"), url("../fonts/gilroy-medium.ttf") format("truetype"), url("../fonts/gilroy-medium.svg#gilroy-medium") format("svg"); /* Chrome < 4, Legacy iOS */
+  font-weight: 500;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +205,11 @@ body {
 }
 
 .body {
-  font-family: "Montserrat";
+  font-family: "Gilroy";
+}
+
+.body._lock {
+  overflow: hidden;
 }
 
 input,
@@ -106,4 +256,27 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 400;
+}
+
+.switch {
+  width: 68px;
+  height: 17px;
+  display: flex;
+  flex-direction: column;
+}
+.rus {
+  font-size: 16px;
+  line-height: 19.81px;
+  font-weight: 700;
+  color: #000;
+  transform: rotate(-90deg);
+  margin: 0px 0px 20px 0px;
+}
+
+.eng {
+  font-size: 16px;
+  line-height: 19.81px;
+  font-weight: 700;
+  color: #000;
+  transform: rotate(-90deg);
 }

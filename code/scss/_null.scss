@@ -43,6 +43,10 @@ body {
     font-family: $fontFamily;
 }
 
+.body._lock {
+    overflow: hidden;
+}
+
 input,
 button,
 textarea {

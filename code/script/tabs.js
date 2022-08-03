@@ -41,3 +41,55 @@
 // $(document).ready(function(){
 //     $(".server").lightTabs();
 // });
+
+
+
+
+
+
+
+
+//<Кнопка смена языка=============================================
+$(document).ready(function() {
+
+    $('.rus').on('click', function() {
+       var r = $('.localization').each(function() {
+          var el = $(this);
+          var key = (el.attr('caption'));
+          el.text(rus[key]);
+       });
+    });
+ 
+ 
+    $('.eng').on('click', function() {
+       var r = $('.localization').each(function() {
+          var el = $(this);
+          var key = (el.attr('caption'));
+          el.text(eng[key]);
+       });
+    });
+ 
+    var rus = {
+        ux: 'UX | UI Дизайнер 24 года, Минск'
+    };
+    var eng = {
+        ux: 'UX | UI designer 24 years old, Minsk'
+    };
+ 
+    var rus = {
+       test: 'тест',
+       name: 'UX | UI Дизайнер 24 года, Минск'
+    };
+    var eng = {
+       test: 'test',
+       name: 'UX | UI designer 24 years old, Minsk'
+    };
+ 
+ 
+ 
+ 
+ 
+ });
+
+
+ //=====================================================================

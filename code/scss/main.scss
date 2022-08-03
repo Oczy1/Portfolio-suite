@@ -1,6 +1,54 @@
 @import "_formul";
-@import "_fonts";
-@import "_null";
 @import "_header";
 @import "_footer";
+@import "_fonts";
+@import "_null";
 
+
+
+
+.page {
+}
+.hello {
+
+		&__container {
+		}
+
+		&__content {
+		}
+
+		&__title {
+		}
+
+		&__text {
+		}
+
+		&__photo {
+		}
+}
+
+.text {
+}
+.switch {
+    width: 68px;
+    height: 17px;
+    display: flex;
+    flex-direction: column;
+		&__langue {
+		}
+}
+.rus{
+    font-size: 16px;
+    line-height: 19.81px;
+    font-weight: 700;
+    color: #000;
+    transform: rotate(-90deg);
+    margin: 0px 0px 20px 0px;;
+}
+.eng{
+    font-size: 16px;
+    line-height: 19.81px;
+    font-weight: 700;
+    color: #000;
+    transform: rotate(-90deg);
+}

@@ -1,16 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,300;1,600&display=swap'); //Montserrat
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+        font-weight: 700;
+        font-style: normal;
+}
 
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+        font-weight: 500;
+        font-style: normal;
 
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -20,6 +31,6 @@
 
 
 //<Шрифт по умолчанию====================================================================================
-$fontFamily: "Montserrat";
+$fontFamily: "Gilroy";
 //<Шрифт по умолчанию=========================================================================================
 
