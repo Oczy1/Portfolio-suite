@@ -10,7 +10,7 @@
 
 .menu {
     &__icon {
-        }
+    }
 
     &__body {
         padding: 0 0 10px 0;
@@ -25,12 +25,12 @@
             background: #fff;
             overflow: auto;
             padding: 66px 0px 30px 15px;
-            &._active{
+            &._active {
                 transform: translate(0px, 0%);
-                }
+            }
         }
-        &:after{
-            content: '';
+        &:after {
+            content: "";
             width: 100%;
             justify-content: flex-end;
             border: 1px solid transparent;
@@ -38,8 +38,17 @@
             display: flex;
             background: rgba(130, 130, 130, 1);
             @media (max-width: $md3+px) {
-            display: none;
+                display: none;
             }
+        }
+    }
+    &__switch {
+        display: none;
+        @media (max-width: $md4+px) {
+            display: flex;
+            flex-direction: column;
+            padding: 140px 0px 0 230px;
+
         }
     }
 
@@ -49,24 +58,24 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        @media (max-width: $md3+px){
+        @media (max-width: $md3+px) {
             display: block;
+            height: auto;
             // flex-direction: column;
             // justify-content: flex-end;
             // align-items: center;
             // // text-align: center;
             // height: auto;
             li {
-                margin: 0px 0px 25px 0px;
-                &:last-child{
+                margin: 0px 0px 45px 0px;
+                &:last-child {
                     margin: 0px 0px 0px 0px;
                 }
             }
         }
-        }
-        li {
-        }
-
+    }
+    li {
+    }
 
     &__link {
         font-size: 18px;
@@ -74,24 +83,23 @@
         line-height: 22px;
         color: #070707;
         transition: color 0.4 ease 0;
-        @media (max-width: $md3+px){
+        @media (max-width: $md3+px) {
             font-size: 34px;
         }
-        @media (min-width: $md2+px){
+        @media (min-width: $md2+px) {
             &:hover {
                 color: #828282;
             }
         }
-        @media (max-width: $md3+px){
+        @media (max-width: $md3+px) {
             color: #828282;
-            &._active{
+            &._active {
                 color: #000;
                 transition: all 0.4s ease 0s;
             }
         }
     }
 }
-
 
 // burger
 .icon-menu {
@@ -137,4 +145,3 @@
         }
     }
 }
-

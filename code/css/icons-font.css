@@ -25,144 +25,71 @@
 }
 
 .icon-star:before {
-  content: "\e91f";
-}
-.icon-AE .path1:before {
-  content: "\e904";
-  color: rgb(0, 0, 0);
-}
-.icon-AE .path2:before {
-  content: "\e905";
-  margin-left: -1.01171875em;
-  color: rgb(216, 161, 255);
-}
-.icon-ai .path1:before {
-  content: "\e906";
-  color: rgb(0, 0, 0);
-}
-.icon-ai .path2:before {
-  content: "\e907";
-  margin-left: -1.01171875em;
-  color: rgb(255, 127, 24);
-}
-.icon-Figma .path1:before {
-  content: "\e908";
-  color: rgb(10, 207, 131);
-}
-.icon-Figma .path2:before {
-  content: "\e909";
-  margin-left: -0.6630859375em;
-  color: rgb(162, 89, 255);
-}
-.icon-Figma .path3:before {
-  content: "\e90a";
-  margin-left: -0.6630859375em;
-  color: rgb(242, 78, 30);
-}
-.icon-Figma .path4:before {
-  content: "\e90b";
-  margin-left: -0.6630859375em;
-  color: rgb(255, 114, 98);
-}
-.icon-Figma .path5:before {
-  content: "\e90c";
-  margin-left: -0.6630859375em;
-  color: rgb(26, 188, 254);
-}
-.icon-Group .path1:before {
-  content: "\e90d";
-  color: rgb(0, 0, 0);
-}
-.icon-Group .path2:before {
-  content: "\e90e";
-  margin-left: -1.01171875em;
-  color: rgb(49, 197, 240);
-}
-.icon-LR .path1:before {
-  content: "\e90f";
-  color: rgb(0, 0, 0);
-}
-.icon-LR .path2:before {
-  content: "\e910";
-  margin-left: -1.0341796875em;
-  color: rgb(170, 209, 235);
-}
-.icon-PR .path1:before {
-  content: "\e911";
-  color: rgb(0, 0, 0);
-}
-.icon-PR .path2:before {
-  content: "\e912";
-  margin-left: -1.0341796875em;
-  color: rgb(229, 121, 255);
-}
-.icon-Sketch .path1:before {
-  content: "\e913";
-  color: rgb(234, 108, 0);
-}
-.icon-Sketch .path2:before {
-  content: "\e914";
-  margin-left: -1.115234375em;
-  color: rgb(234, 108, 0);
-}
-.icon-Sketch .path3:before {
-  content: "\e915";
-  margin-left: -1.115234375em;
-  color: rgb(253, 173, 0);
-}
-.icon-Sketch .path4:before {
-  content: "\e916";
-  margin-left: -1.115234375em;
-  color: rgb(253, 210, 49);
-}
-.icon-Sketch .path5:before {
-  content: "\e917";
-  margin-left: -1.115234375em;
-  color: rgb(253, 210, 49);
-}
-.icon-Sketch .path6:before {
-  content: "\e918";
-  margin-left: -1.115234375em;
-  color: rgb(253, 173, 0);
-}
-.icon-Sketch .path7:before {
-  content: "\e919";
-  margin-left: -1.115234375em;
-  color: rgb(253, 173, 0);
-}
-.icon-Sketch .path8:before {
-  content: "\e91a";
-  margin-left: -1.115234375em;
-  color: rgb(254, 238, 183);
-}
-.icon-XD .path1:before {
-  content: "\e91b";
-  color: rgb(229, 229, 229);
-}
-.icon-XD .path2:before {
-  content: "\e91c";
-  margin-left: -1.0341796875em;
-  color: rgb(46, 0, 30);
-}
-.icon-XD .path3:before {
-  content: "\e91d";
-  margin-left: -1.0341796875em;
-  color: rgb(255, 43, 194);
-}
-.icon-XD .path4:before {
-  content: "\e91e";
-  margin-left: -1.0341796875em;
-  color: rgb(255, 43, 194);
-}
-.icon-behance:before {
-  content: "\e900";
-}
-.icon-in:before {
   content: "\e901";
 }
+.icon-behance:before {
+  content: "\e903";
+}
+.icon-in:before {
+  content: "\e90a";
+}
 .icon-instagram:before {
-  content: "\e902";
+  content: "\e90c";
 }
 .icon-planet:before {
-  content: "\e903";
+  content: "\e90d";
+}
+.icon-ae:before {
+  content: "\e900";
+  color: #d8a1ff;
+  background: radial-gradient(76% 75.63% at 32.97% 22.42%, rgba(68, 47, 85, 0.98) 0%, #12002C 100%);
+}
+.icon-ai:before {
+  content: "\e902";
+  color: #ff7f18;
+  background: radial-gradient(76% 75.63% at 32.97% 22.44%, rgba(66, 51, 37, 0.98) 0%, #1C0A00 100%);
+}
+.icon-figma-blue:before {
+  content: "\e904";
+  color: #1abcfe;
+}
+.icon-figma-green:before {
+  content: "\e905";
+  color: #0acf83;
+}
+.icon-figma-orange:before {
+  content: "\e906";
+  color: #f24e1e;
+}
+.icon-figma-pers:before {
+  content: "\e907";
+  color: #ff7262;
+}
+.icon-figma-purple:before {
+  content: "\e908";
+  color: #a259ff;
+}
+.icon-lr:before {
+  content: "\e909";
+  color: #aad1eb;
+}
+.icon-pr:before {
+  content: "\e90b";
+  color: #e579ff;
+}
+.icon-ps-1:before {
+  content: "\e90e";
+  color: #31c5f0;
+  background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+.icon-xd:before {
+  content: "\e90f";
+  color: #ff2bc2;
+}
+.icon-xd-back:before {
+  content: "\e910";
+}
+.icon-xd-otline:before {
+  content: "\e911";
+  color: #ff2bc2;
 }

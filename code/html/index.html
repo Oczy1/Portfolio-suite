@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/icons-font.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <title>MY</title>
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 
@@ -23,12 +23,16 @@
                     </div>
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li><a data-goto="" href="#" class="menu__link">Home</a></li>
-                            <li><a data-goto="" href="#" class="menu__link">About me </a></li>
-                            <li><a data-goto="" href="#" class="menu__link">Skills</a></li>
-                            <li><a data-goto="" href="#" class="menu__link">Portfolio</a></li>
-                            <li><a data-goto="" href="#" class="menu__link">Contacts</a></li>
+                            <li><a data-goto=".hello" href="#" class="menu__link">Home</a></li>
+                            <li><a data-goto=".about" href="#" class="menu__link">About me </a></li>
+                            <li><a data-goto=".skill" href="#" class="menu__link">Skills</a></li>
+                            <li><a data-goto=".portfolio" href="#" class="menu__link">Portfolio</a></li>
+                            <li><a data-goto=".footer" href="#" class="menu__link">Contacts</a></li>
                         </ul>
+                        <div class="menu__switch switch">
+                            <a class='rus' type=button value='rus'>RU |</a>
+                            <a class='eng' type=button value='eng'>ENG</a>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -39,20 +43,130 @@
                     <div class="hello__content">
                         <h1 class="hello__title">Denis Novik</h1>
                         <div class="hello__text text">UX | UI designer 24 years old, Minsk</div>
-                        <div class="switch__langue switch">
-                            <a class='rus' type=button value='rus'>eng</a>
-                            <a class='eng' type=button value='eng'>rus |</a>
+                        <div class="hello__switch switch">
+                            <a class='eng' type=button value='eng'>ENG</a>
+                            <a class='rus' type=button value='rus'>RU |</a>
                         </div>
                     </div>
                     <div class="hello__photo">
-                        <img src="../img/photo.png" alt="">
+                        <img class="photo-pc" src="../img/photo.png" alt="">
+                        <img class="photo-tele" src="../img/photo-tel.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about__container _container">
+                    <h2 class="about__title title">About me</h2>
+                    <div class="about__text text">
+                        <span>Hi, I'm Denis – UX/UI designer from Minsk.
+                            <br>I'm interested in design and everything connected with it.</span>
+
+                        <span>I'm studying at courses "Web and mobile design<br>
+                            interfaces" in IT-Academy.</span>
+
+                        <span>Ready to implement excellent projects<br>
+                            with wonderful people.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill__container _container">
+                    <div class="skill__content">
+                        <div class="skill__title title">Skills</div>
+                        <div class="skill__text text">I work in such programs as</div>
+                        <div class="skill__soft">
+                            <div class="soft__pg">
+                                <div class="soft__icon icon-ps-1 soft"></div>
+                                <div class="soft__text">Adobe<br>Pgotoshop</div>
+                                <div class="soft__star">
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item_inactive icon-star"></div>
+                                </div>
+                            </div>
+                            <div class="soft__pg">
+                                <div class="soft__icon icon-ai soft"></div>
+                                <div class="soft__text">Adobe<br>Illustrator</div>
+                                <div class="soft__star">
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item_inactive icon-star"></div>
+                                    <div class="star-item_inactive icon-star"></div>
+                                </div>
+                            </div>
+                            <div class="soft__pg">
+                                <div class="soft__icon icon-ae soft"></div>
+                                <div class="soft__text">Adobe<br>After Effects</div>
+                                <div class="soft__star">
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item_inactive icon-star"></div>
+                                </div>
+                            </div>
+                            <div class="soft__pg">
+                                <div class="soft__icon_figma soft__figma">
+                                    <div class="figma icon-figma-orange">
+                                        <div class="figma icon-figma-pers"></div>
+                                    </div>
+                                    <div class="figma icon-figma-purple">
+                                        <div class="figma icon-figma-blue"></div>
+                                    </div>
+                                    <div class="figma icon-figma-green"></div>
+                                </div>
+                                <div class="soft__text">Figma</div>
+                                <div class="soft__star">
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item icon-star"></div>
+                                    <div class="star-item_inactive icon-star"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio">
+                <div class="portfolio__container _container">
+                    <div class="portfolio__content">
+                        <div class="portfolio__title title">Portfolio</div>
+
+                        <img class="portfolio__screen_pc" srcset="../img/woman.png" alt="">
+                        <img class="portfolio__screen_tele" src="../img/woman-320w.png" alt="">
+                        <div class="portfolio__text text"><a href="#">Online fashion store - Homepage</a></div>
+
+                        <img class="portfolio__screen_pc" srcset="../img/reebok.png" alt="">
+                        <img class="portfolio__screen_tele" src="../img/reebok-320w.png" alt="">
+                        <div class="portfolio__text text"><a href="#">Reebok Store - Concept</a></div>
+
+                        <img class="portfolio__screen_pc" src="../img/braun.png" alt="">
+                        <img class="portfolio__screen_tele" src="../img/braun-320w.png" alt="">
+                        <div class="portfolio__text text"><a href="#">Braun Landing Page - Concept</a></div>
                     </div>
                 </div>
             </div>
         </main>
         <footer class="footer">
-            <div class="footer__content _container">
-
+            <div class="footer__conteiner _container">
+                <div class="footer__content">
+                    <div class="footer__title title">Contacts</div>
+                    <div class="footer__text text">Want to know more or just chat?<br>
+                        You are welcome!</div>
+                    <div class="footer__btn">Send massage</div>
+                    <div class="footer__social">
+                        <div class="social icon-in"></div>
+                        <div class="social icon-instagram"></div>
+                        <div class="social icon-behance"></div>
+                        <div class="social icon-planet"></div>
+                    </div>
+                    <div class="footer__ps">Like me on<br>
+                        LinkedIn, Instagram, Behance, Dribble</div>
+                </div>
             </div>
         </footer>
     </div>
