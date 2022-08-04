@@ -476,6 +476,10 @@ h6 {
   font-size: 14px;
   line-height: 17px;
   color: rgb(130, 130, 130);
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
 }
 .soft__star {
   display: inline-flex;

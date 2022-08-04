@@ -94,13 +94,13 @@ if(iconMenu){
 
 
 //Hover при нажатии на мобилках=====================================
-const menuList = document.querySelector('.menu__list');
-if(menuList){
-    const menuLink = document.querySelector('.menu__link');
-    menuList.addEventListener("click", function(e) {
-    menuLink.classList.toggle('_active');
-    });
-}
 
+let menuItems = document.querySelectorAll('.menu__link');
+menuItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        menuItems.forEach(el => { el.classList.remove('_active'); });
+        item.classList.add('_active')
+    })
+})
 
 //===========================================================================
